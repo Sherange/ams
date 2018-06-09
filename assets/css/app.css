@@ -1,0 +1,13 @@
+.registration-wrapper {
+    margin: 10px;
+    padding: 10px;
+}
+.footer-wrapper{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #2C3E50;
+    color: white;
+}

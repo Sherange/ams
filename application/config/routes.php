@@ -54,6 +54,9 @@ $route['student/(:num)']['GET'] = 'StudentController/view/$1';
 
 $route['attendance'] = 'AttendanceController/index';
 
+$route['register'] = 'UserController/registration';
+$route['login'] = 'UserController/login';
+
 $route['default_controller'] = 'PagesController/view';
 $route['(:any)'] = 'PagesController/view/$1';
 $route['404_override'] = '';
