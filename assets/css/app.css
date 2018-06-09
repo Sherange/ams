@@ -1,4 +1,12 @@
+.student-wrapper{
+    margin: 10px;
+    padding: 10px;
+}
 .registration-wrapper {
+    margin: 10px;
+    padding: 10px;
+}
+.login-wrapper {
     margin: 10px;
     padding: 10px;
 }
@@ -10,4 +18,15 @@
     padding: 15px 10px;
     background-color: #2C3E50;
     color: white;
+}
+.banner-wrapper{
+    padding: 10px;
+    min-height: 10rem;
+    background-image: url("/assets/img/banner.jpg");
+    background-repeat: no-repeat 50%;
+    background-size: cover;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    text-align: center;
 }

@@ -1,15 +1,23 @@
-<div class="registration-wrapper">
-    <section>
+<section>
+    <div class="banner-wrapper">
+        <h1>
+            User Registration
+        </h1>
+    </div>
+</section>
+<section>
+    <div class="registration-wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <?php echo validation_errors(
                         '<div class="container">
                             <div class="alert alert-dismissible alert-danger">
-                                <button type="button" class="close" data-dismiss="alert">'.'&times;'.'</button>
+                                <button type="button" class="close" data-dismiss="alert">' . '&times;' . '</button>
                                     <strong>',
-                            '</div>
-                        </div>'); ?>
+                        '</div>
+                        </div>'
+                    ); ?>
                     <form action="" method="POST">
                         <div class="form-group">
                             <label for="user_name">User Name
@@ -39,5 +47,5 @@
 
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
