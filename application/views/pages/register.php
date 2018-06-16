@@ -10,12 +10,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
+                    
+                    <?php if (isset($_SESSION['success'])) { ?>
+                        <div class="alert alert-dismissible alert-success">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <strong><?= $_SESSION['success']; ?></strong>
+                        </div>
+                    <?php } ?>
+
                     <?php echo validation_errors(
                         '<div class="container">
                             <div class="alert alert-dismissible alert-danger">
                                 <button type="button" class="close" data-dismiss="alert">' . '&times;' . '</button>
                                     <strong>',
-                        '</div>
+                        '</strong></div>
                         </div>'
                     ); ?>
                     <form action="" method="POST">

@@ -32,12 +32,23 @@ class UserController extends CI_Controller
                 array(
                     'required'      => 'You have not provided %s.',
                 )
-        );
-
-            if($this->form_validation->run() == true){
-                    echo 'form validated';
-            }
+            );
         }
+
+        if($this->form_validation->run() == true){
+
+                    $data = array (
+                        'user_name' => $_POST['user_name'],
+                        'password' => $_POST['password'],
+                        'user_type' => 'Admin',
+                        'status' => 'Active'
+                    );
+                    
+                    $this->db->insert('user', $data);
+
+                    $this->session->set_flashdata("success", "Your account has been registered, You can login now");
+        }
+        
         $this->load->view('templates/header');
         $this->load->view('pages/register');
         $this->load->view('templates/footer');
