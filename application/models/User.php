@@ -14,4 +14,8 @@ class User extends CI_Model
         
         return $query->result_array();
     } 
+    public function addUser($data) 
+    {
+        $this->db->insert('user', $data);
+    }
 }

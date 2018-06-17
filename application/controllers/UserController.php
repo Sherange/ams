@@ -44,8 +44,8 @@ class UserController extends CI_Controller
                         'status' => 'Active'
                     );
                     
-                    $this->db->insert('user', $data);
-
+                    $this->User->addUser($data);
+                    
                     $this->session->set_flashdata("success", "Your account has been registered, You can login now");
         }
         
