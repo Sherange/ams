@@ -13,4 +13,7 @@ class Migrate extends CI_Controller
         }
     }
 
+    public function message($name = 'World') {
+        echo "Hello {$name}!" . PHP_EOL;
+    }
 }
